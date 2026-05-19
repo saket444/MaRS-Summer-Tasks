@@ -1,0 +1,12 @@
+[0.025s] Invoking command in '/home/saket/ros2_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/saket/ros2_ws/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/saket/ros2_ws/install/cpp_pubsub
+[0.039s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.230s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:77 (message):
+[0.230s]   ament_target_dependencies() the passed package name 'rclcpp' was not found
+[0.230s]   before
+[0.230s] Call Stack (most recent call first):
+[0.230s]   CMakeLists.txt:11 (ament_target_dependencies)
+[0.230s] 
+[0.231s] [0m
+[0.231s] -- Configuring incomplete, errors occurred!
+[0.231s] See also "/home/saket/ros2_ws/build/cpp_pubsub/CMakeFiles/CMakeOutput.log".
+[0.239s] Invoked command in '/home/saket/ros2_ws/build/cpp_pubsub' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/saket/ros2_ws/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/saket/ros2_ws/install/cpp_pubsub
