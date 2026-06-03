@@ -2,15 +2,13 @@
 
 ## Task 1 — ROS 2 Publisher & Subscriber
 
-![ROS2](https://img.shields.io/badge/ROS2-Humble-blue?style=flat-square)
-![C++](https://img.shields.io/badge/C++-rclcpp-00599C?style=flat-square&logo=cplusplus)
-![Python](https://img.shields.io/badge/Python-rclpy-3776AB?style=flat-square&logo=python)
-
 A ROS 2 workspace with publisher/subscriber nodes in both C++ and Python.
 
 ---
 
-### 📁 Structure
+
+### Build
+
 ```bash
 source /opt/ros/humble/setup.bash
 cd ~/ros2_ws
@@ -20,7 +18,7 @@ source install/setup.bash
 
 ---
 
-### ▶️ Run
+### Run
 
 **C++**
 ```bash
@@ -36,7 +34,7 @@ ros2 run py_pubsub py_subscriber
 
 ---
 
-### 🔍 CLI Commands
+### CLI Commands
 
 ```bash
 ros2 topic list
@@ -49,7 +47,7 @@ rqt_graph
 
 ---
 
-### 💡 What I Learned
+### What I Learned
 - ROS 2 workspace and package structure
 - Publisher/subscriber pattern using topics
 - Difference between `ament_cmake` (C++) and `ament_python` (Python) packages
