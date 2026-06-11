@@ -138,3 +138,5 @@ rviz2 -d ~/ros2_ws/src/my_robot_sim/rviz/config.rviz
 - How to spawn a robot in Gazebo Ignition using a launch file
 - How to set up Robot State Publisher and Joint State Publisher
 - How TF trees work and how all links connect to each other
+
+Task 4 is yet to be completed as im having problems with the plugins. especially the image plugin. The rqt controller is left too.
