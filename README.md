@@ -101,3 +101,40 @@ Then rebuild: `colcon build --packages-select my_turtle_pkg`
 | Turtle approaches wall | ❌ `Mission Aborted: Boundary Collision Imminent!` |
 
 ---
+---
+# Task 3: Robot Simulation with ROS2 and Gazebo
+
+A 4-wheeled differential drive robot built using URDF/Xacro and simulated in Gazebo Ignition with ROS2 Humble.
+
+## Build
+```bash
+cd ~/ros2_ws
+colcon build --packages-select my_robot_sim
+source install/setup.bash
+```
+
+## Run
+```bash
+# Terminal 1 - Launch Gazebo simulation
+ros2 launch my_robot_sim sim.launch.py
+
+# Terminal 2 - Joint State Publisher
+ros2 run joint_state_publisher_gui joint_state_publisher_gui
+
+# Terminal 3 - RViz2
+rviz2 -d ~/ros2_ws/src/my_robot_sim/rviz/config.rviz
+```
+
+## Robot Description
+- Rectangular blue chassis (0.4 x 0.3 x 0.1 m)
+- 4 cylindrical wheels using Xacro macros
+- Proper inertia and collision on all links
+
+## TF Tree
+![TF Tree](Tasks/Task_3%20and%20Task_4/my_robot_sim/tf_tree.png)
+
+## What I Learned
+- How to write URDF joints, links, inertia, visuals and collision
+- How to spawn a robot in Gazebo Ignition using a launch file
+- How to set up Robot State Publisher and Joint State Publisher
+- How TF trees work and how all links connect to each other
